@@ -2,7 +2,13 @@
 
 body {
     font-family: "Nunito", "Open Sans", Arial, Helvetica, sans-serif;
-    background: rgba(20, 58, 135, 0.8);
+    height: 100vh;
+    background-image: linear-gradient(rgb(162, 184, 232), rgb(255, 255, 255));
+}
+
+.container{
+    background-color: red;
+    
 }
 
 main {
