@@ -13,15 +13,15 @@
 </head>
 <body>
 <div class="container">
-    <header>
-        <h1>Social Responsibility</h1>
-    </header>
+    
     <nav>
-		<?php if ( $this->section( 'navigation' ) ): ?>
-			<?php echo $this->section( 'navigation' ) ?>
-		<?php else: ?>
-			<?php echo $this->fetch( '_navigation' ) ?>
-		<?php endif ?>
+        <header><h1 id="titel">Social Responsibility</h1>
+            <?php if ( $this->section( 'navigation' ) ): ?>
+                <?php echo $this->section( 'navigation' ) ?>
+            <?php else: ?>
+                <?php echo $this->fetch( '_navigation' ) ?> 
+            <?php endif ?>
+        </header>
     </nav>
     <main>
         <section class="content">

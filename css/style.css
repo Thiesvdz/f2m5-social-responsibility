@@ -4,47 +4,61 @@ body {
     font-family: "Nunito", "Open Sans", Arial, Helvetica, sans-serif;
     height: 100vh;
     background-image: linear-gradient(rgb(162, 184, 232), rgb(255, 255, 255));
+
 }
 
 .container{
-    background-color: red;
-    
+    margin: auto;
 }
 
 main {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px;
-    background: #fff;
+    background: rgb(0, 13, 39);
 }
 
 header {
     padding: 20px;
-    background: rgba(0, 13, 39);
-    color: #fff;
+    background: rgb(252, 252, 252);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    
 }
 
+#titel{
+    margin-bottom: 10px;
+}
 header h1 {
     margin-bottom: 0;
 }
 
 nav {
-    padding: 20px;
-    background: rgb(162, 184, 232);
+    padding: 5px;
+    animation: animate 10s linear infinite;
+    background-image: linear-gradient(135deg, rgb(162, 184, 232) 0%, black 25%, white 50%, rgb(0, 13, 39) 75%, rgb(162, 184, 232) 100%);
+    background-size: 200%;
     color: #fff;
 }
 
+@keyframes animate{
+    100%{
+      background-position: 200%;
+    }
+  }
+
 .content {
     background: #ffffff;
-    min-height: 100px;
+    height: 75vh;
     padding: 20px;
+    text-align: center;
+
 }
 
 nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
-
 }
 
 nav ul li {
@@ -60,8 +74,8 @@ nav ul li a {
 }
 
 nav ul li .active, nav ul li a:hover {
-    color: #000;
-    background: #fff
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0)
 }
 
 
@@ -69,11 +83,13 @@ aside {
     background: rgb(162, 184, 232);
     min-height: 100px;
     padding: 20px;
+
 }
 
 .top-10 ol {
     margin: 0;
     padding: 0 20px;
+    
 }
 
 footer {
