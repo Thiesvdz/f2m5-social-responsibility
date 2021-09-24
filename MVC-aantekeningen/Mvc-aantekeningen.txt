@@ -1,0 +1,12 @@
+localhost -->  http request --> Front controller(ingang)
+				
+
+localhost maakt request naar de index. Daarna probeert de router de request te matchen in een tabel met url/routes
+Als de route niet bestaat komt er een 404 error.
+
+Website controller class (pakket met code)
+De controller haalt code uit de model(database)
+Vervolgens wordt de code aan de view gegeven
+
+De controller geeft met een laatste beetje code een html response.
+

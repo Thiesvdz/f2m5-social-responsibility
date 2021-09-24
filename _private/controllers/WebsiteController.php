@@ -18,6 +18,4 @@ class WebsiteController {
 		echo $template_engine->render('homepage');
 
 	}
-
 }
-
