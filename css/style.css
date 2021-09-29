@@ -3,7 +3,7 @@
 body {
     font-family: "Nunito", "Open Sans", Arial, Helvetica, sans-serif;
     height: 100vh;
-    background-image: linear-gradient(rgb(162, 184, 232), rgb(255, 255, 255));
+    background-image: linear-gradient(#1E11A0, #ba9ffa);
 
 }
 
@@ -23,7 +23,6 @@ header {
     background: rgb(252, 252, 252);
     color: rgb(0, 0, 0);
     text-align: center;
-    
 }
 
 #titel{
