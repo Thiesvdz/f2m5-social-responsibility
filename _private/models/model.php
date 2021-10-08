@@ -32,3 +32,27 @@ function addTopic($title, $description){
 
 		return $result;
 }
+
+function updateTopic($topicId,$newTitle,$newDescription){
+		$connection = dbConnect();
+		$sql = "UPDATE `topics` SET `title` = :new_title, `description` = :new_description WHERE `topics`.`id` = :topic_id;";
+		$statement = $connection->prepare($sql);
+		$result = $statement->execute([
+			'new_title' => $newTitle,
+			'new_description' => $newDescription,
+			'topic_id' => $topicId
+		]);
+		
+		return $result;
+}
+
+function deleteTopic($topicToDelete){
+		$connection = dbConnect();
+		$sql = "DELETE FROM `topics` WHERE `topics`.`id` = :topic_id";
+		$statement = $connection->prepare($sql);
+		$statement->execute([
+			'topic_id' => $topicToDelete
+		]);
+
+		return $statement->rowCount();
+}
