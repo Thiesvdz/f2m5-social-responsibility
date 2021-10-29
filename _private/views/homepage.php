@@ -15,8 +15,7 @@
 <?php $this->stop()?>
 
 <h1 class="middenstuk">Welkom</h1>
-
-<p>Dit is de start van jullie project website!</p> 
+ 
 
 
 
