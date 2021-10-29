@@ -16,9 +16,8 @@ class BlogController {
 
     public function showBlog($slug){
 
-        $blogPost = getBlogPosts($slug);
-
-        print_r($blogPost);
-
+        $blogPost = getBlogPost($slug);
+        $template_engine = get_template_engine();
+        return $template_engine->render('blog_post',['blog_post' => $blogPost]);
     }
 }
