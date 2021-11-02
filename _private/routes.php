@@ -4,7 +4,7 @@ use Pecee\Http\Request;
 use Pecee\SimpleRouter\Exceptions\NotFoundHttpException;
 use Pecee\SimpleRouter\SimpleRouter;
 
-SimpleRouter::setDefaultNamespace( 'Website\Controllers' );
+SimpleRouter::setDefaultNamespace( 'Website\Controllers' ); 
 
 SimpleRouter::group( [ 'prefix' => site_url() ], function () {
 
