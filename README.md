@@ -1,5 +1,9 @@
 ## MVC starter project
 
+
+## Link naar live site(Groeps project site): https://32048.hosts1.ma-cloud.nl/bewijzenmap-2e/Periode-1/f2m5-team/
+
+
 Gebruik dit voorbeeld project als uitfgangspunt voor het huidige project. Hiermee leer je werken volgens de MVC structuur (model view controller).
 Dit project maakt gebruikt van een paar *third party* libraries. Dit is kant en klare *open-source* code van andere developers die je gratis mag gebruiken! Dat scheelt veel uren zelf code schrijven.
 
